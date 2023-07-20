@@ -8,19 +8,19 @@ import {Component} from "@angular/core";
 export class PasswordComponent {
 
   checkPasswordStrength(val: string) {
-    let elem1 = document.getElementById("first")
-    let elem2 = document.getElementById("second")
-    let elem3 = document.getElementById("third")
-    let arrayElems = [elem1, elem2, elem3]
+    const elem1 = document.getElementById("first")
+    const elem2 = document.getElementById("second")
+    const elem3 = document.getElementById("third")
+    const arrayElems = [elem1, elem2, elem3]
 
     //regular expressions
-    let onlyLetters = new RegExp(/^[a-zA-Z]+$/g)
-    let onlyDigits = new RegExp(/^\d+$/g)
-    let onlySymbols = new RegExp(/^[!@#$%^&*()_+{}\[\]:;"'<>,.?/\\|`№~=-]+$/g)
-    let lettersAndSymbols = new RegExp(/^(?=.*[a-zA-Z])(?=.*[!@#$%^&*()_+{}\[\]:;"'<>,.?/\\|`№~=-]).+$/g)
-    let lettersAndDigits = new RegExp(/^(?=.*[a-zA-Z])(?=.*\d)[a-zA-Z\d]+$/g)
-    let digitsAndSymbols = new RegExp(/^(?=.*[0-9])(?=.*[!@#$%^&*()_+{}\[\]:;"'<>,.?/\\|`№~=-]).+$/g)
-    let lettersDigitsSymbols = new RegExp(/^(?=.*[a-zA-Z])(?=.*[0-9])(?=.*[!@#$%^&*()_+{}\[\]:;"'<>,.?/\\|`№~=-])[a-zA-Z0-9!@#$%^&*()_+{}\[\]:;"'<>,.?/\\|`№~=-]+$/g)
+    const onlyLetters = new RegExp(/^[a-zA-Z]+$/g)
+    const onlyDigits = new RegExp(/^\d+$/g)
+    const onlySymbols = new RegExp(/^[!@#$%^&*()_+{}\[\]:;"'<>,.?/\\|`№~=-]+$/g)
+    const lettersAndSymbols = new RegExp(/^(?=.*[a-zA-Z])(?=.*[!@#$%^&*()_+{}\[\]:;"'<>,.?/\\|`№~=-]).+$/g)
+    const lettersAndDigits = new RegExp(/^(?=.*[a-zA-Z])(?=.*\d)[a-zA-Z\d]+$/g)
+    const digitsAndSymbols = new RegExp(/^(?=.*[0-9])(?=.*[!@#$%^&*()_+{}\[\]:;"'<>,.?/\\|`№~=-]).+$/g)
+    const lettersDigitsSymbols = new RegExp(/^(?=.*[a-zA-Z])(?=.*[0-9])(?=.*[!@#$%^&*()_+{}\[\]:;"'<>,.?/\\|`№~=-])[a-zA-Z0-9!@#$%^&*()_+{}\[\]:;"'<>,.?/\\|`№~=-]+$/g)
 
     if (elem1 != null && elem2 != null && elem3 != null) {
 
