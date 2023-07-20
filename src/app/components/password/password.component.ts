@@ -26,8 +26,10 @@ export class PasswordComponent {
 
       if (val === "") {
         this.setAllColor(arrayElems, 'gray')
+
       } else if (val.length < 8) {
         this.setAllColor(arrayElems, 'red')
+
       } else if (val.match(onlyLetters)?.length == 1 || val.match(onlyDigits)?.length == 1 ||
         val.match(onlySymbols)?.length == 1) {
         this.setAllColor(arrayElems, 'gray')
@@ -42,8 +44,8 @@ export class PasswordComponent {
         if (val.match(lettersDigitsSymbols)?.length == 1) {
           this.setAllColor(arrayElems, 'green')
         }
-      }
 
+      }
 
     }
 
@@ -56,6 +58,13 @@ export class PasswordComponent {
       }
 
     })
+  }
+
+  changePasswordVisibility(event: any) {
+    const passwordField = <HTMLInputElement>document.getElementById("input-password")
+    if (event.target.checked) {
+      passwordField.type = "text"
+    } else passwordField.type = "password"
   }
 
 }
