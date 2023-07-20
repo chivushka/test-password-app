@@ -16,11 +16,11 @@ export class PasswordComponent {
     //regular expressions
     let onlyLetters = new RegExp(/^[a-zA-Z]+$/g)
     let onlyDigits = new RegExp(/^\d+$/g)
-    let onlySymbols = new RegExp(/^[!@#$%^&*()_+{}\[\]:;"'<>,.?/\\|~-]+$/g)
-    let lettersAndSymbols = new RegExp(/^(?=.*[a-zA-Z])(?=.*[!@#$%^&*()_+{}\[\]:;"'<>,.?/\\|~-]).+$/g)
+    let onlySymbols = new RegExp(/^[!@#$%^&*()_+{}\[\]:;"'<>,.?/\\|`№~=-]+$/g)
+    let lettersAndSymbols = new RegExp(/^(?=.*[a-zA-Z])(?=.*[!@#$%^&*()_+{}\[\]:;"'<>,.?/\\|`№~=-]).+$/g)
     let lettersAndDigits = new RegExp(/^(?=.*[a-zA-Z])(?=.*\d)[a-zA-Z\d]+$/g)
-    let digitsAndSymbols = new RegExp(/^(?=.*[0-9])(?=.*[!@#$%^&*()_+{}\[\]:;"'<>,.?/\\|~-]).+$/g)
-    let lettersDigitsSymbols = new RegExp(/^(?=.*[a-zA-Z])(?=.*[0-9])(?=.*[!@#$%^&*()_+{}\[\]:;"'<>,.?/\\|~-])[a-zA-Z0-9!@#$%^&*()_+{}\[\]:;"'<>,.?/\\|~-]+$/g)
+    let digitsAndSymbols = new RegExp(/^(?=.*[0-9])(?=.*[!@#$%^&*()_+{}\[\]:;"'<>,.?/\\|`№~=-]).+$/g)
+    let lettersDigitsSymbols = new RegExp(/^(?=.*[a-zA-Z])(?=.*[0-9])(?=.*[!@#$%^&*()_+{}\[\]:;"'<>,.?/\\|`№~=-])[a-zA-Z0-9!@#$%^&*()_+{}\[\]:;"'<>,.?/\\|`№~=-]+$/g)
 
     if (elem1 != null && elem2 != null && elem3 != null) {
 
